@@ -48,7 +48,7 @@ If you want to know ping messages, you simply use `response.print_messages()`
 > response.print_messages()
 
 PING google.com (172.217.27.174): 55 data bytes
-47 bytes from 172.217.27.174: icmp_seq=0 ttl=49 time=32.333 ms
+55 bytes from 172.217.27.174: icmp_seq=0 ttl=49 time=32.333 ms
 --- google.com ping statistics ---
 1 packets transmitted, 1 packets received, 0.0% packet loss
 round-trip min/avg/max = 32.333/32.333/32.333 ms
@@ -64,7 +64,7 @@ If you want print messages during executing on stdout, turns off `quiet` option 
 > p.ping("google.com")
 
 PING google.com (172.217.27.174): 55 data bytes
-47 bytes from 172.217.27.174: icmp_seq=0 ttl=49 time=32.333 ms
+55 bytes from 172.217.27.174: icmp_seq=0 ttl=49 time=32.333 ms
 --- google.com ping statistics ---
 1 packets transmitted, 1 packets received, 0.0% packet loss
 round-trip min/avg/max = 32.333/32.333/32.333 ms
@@ -79,9 +79,9 @@ Then, `is_reached` method is True in case that last packet was successfully sent
 > response = p.ping("google.com", times=3)
 
 PING google.com (172.217.27.174): 55 data bytes
-47 bytes from 172.217.27.174: icmp_seq=0 ttl=49 time=32.426 ms
-47 bytes from 172.217.27.174: icmp_seq=1 ttl=49 time=32.160 ms
-47 bytes from 172.217.27.174: icmp_seq=2 ttl=49 time=31.829 ms
+55 bytes from 172.217.27.174: icmp_seq=0 ttl=49 time=32.426 ms
+55 bytes from 172.217.27.174: icmp_seq=1 ttl=49 time=32.160 ms
+55 bytes from 172.217.27.174: icmp_seq=2 ttl=49 time=31.829 ms
 --- google.com ping statistics ---
 3 packets transmitted, 3 packets received, 0.0% packet loss
 round-trip min/avg/max = 31.829/32.138/32.426 ms
